@@ -21,9 +21,9 @@ char* input(char* string, int tamanho) {
 }
 
 int split(char *str, const char *delim, char ***array, int *length) {
-  int i=0;
-  char *token;
-  char **res = (char **) malloc(0 * sizeof(char *));
+	int i=0;
+	char *token;
+	char **res = (char **) malloc(0 * sizeof(char *));
 	if( !res ) return -1;
 
   /* get the first token */
@@ -37,7 +37,7 @@ int split(char *str, const char *delim, char ***array, int *length) {
 	}
 	*array = res;
 	*length = i;
-  return 0;
+	return 0;
 }
 
 int main() {
@@ -45,8 +45,8 @@ int main() {
 	char linha[50];
 
 	char **res = NULL;
-  int count = 0;
-  int rc;
+	int count = 0;
+	int rc;
 
 	input(linha, sizeof(linha));
 
