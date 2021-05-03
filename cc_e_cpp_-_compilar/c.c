@@ -1,13 +1,3 @@
-/*
- =====================================
- Name        : cpc.c
- Author      : Pedro Costa Calazans
- Version     :
- Copyright   : Your copyright notice
- Description : Compilador C
- =====================================
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
