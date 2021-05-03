@@ -1,7 +1,7 @@
 /*
  =====================================
  Name        : cpp.c
- Author      : Alan Calazans
+ Author      : Pedro Costa Calazans
  Version     :
  Copyright   : Your copyright notice
  Description : Compilador C++
