@@ -1,0 +1,61 @@
+
+#======================================
+# Trecho com a customização
+#======================================
+
+#======================================
+# Váriavies com as Cores
+#======================================
+NONE="\[\033[0m\]" # Eliminar as Cores, deixar padrão)
+ 
+## Cores de Fonte
+FK="\[\033[0;30m\]" # Black (Preto)
+FR="\[\033[0;31m\]" # Red (Vermelho)
+FG="\[\033[0;32m\]" # Green (Verde)
+FY="\[\033[0;33m\]" # Yellow (Amarelo)
+FB="\[\033[0;34m\]" # Blue (Azul)
+FM="\[\033[0;35m\]" # Magenta (Vermelho Claro)
+FC="\[\033[0;36m\]" # Cyan (Ciano - Azul Claro)
+FW="\[\033[0;37m\]" # White (Branco)
+ 
+## Efeito Negrito (bold) e cores
+BK="\[\033[1;30m\]" # Bold+Black (Negrito+Preto)
+BR="\[\033[1;31m\]" # Bold+Red (Negrito+Vermelho)
+BG="\[\033[1;32m\]" # Bold+Green (Negrito+Verde)
+BY="\[\033[1;33m\]" # Bold+Yellow (Negrito+Amarelo)
+BB="\[\033[1;34m\]" # Bold+Blue (Negrito+Azul)
+BM="\[\033[1;35m\]" # Bold+Magenta (Negrito+Vermelho Claro)
+BC="\[\033[1;36m\]" # Bold+Cyan (Negrito+Ciano - Azul Claro)
+BW="\[\033[1;37m\]" # Bold+White (Negrito+Branco)
+ 
+## Cores de fundo (backgroud)
+BGK="\[\033[40m\]" # Black (Preto)
+BGR="\[\033[41m\]" # Red (Vermelho)
+BGG="\[\033[42m\]" # Green (Verde)
+BGY="\[\033[43m\]" # Yellow (Amarelo)
+BGB="\[\033[44m\]" # Blue (Azul)
+BGM="\[\033[45m\]" # Magenta (Vermelho Claro)
+BGC="\[\033[46m\]" # Cyan (Ciano - Azul Claro)
+BGW="\[\033[47m\]" # White (Branco)
+ 
+#======================================
+# Configurações referentes ao usuário
+#======================================
+ 
+## Verifica se é usuário root (UUID=0) ou usuário comum
+if [ $UID -eq "0" ]; then
+ 
+## Cores e efeitos do Usuario root
+ 
+PS1="$G┌─[$BG\u$G]$BY@$G[$BC${HOSTNAME%%.*}$G]$B:\w\n$G└──>$BR \\$ $NONE"
+ 
+else
+ 
+if [ "$TERM" = "xterm" ]; then
+	PS1="$BR┌─[$BB\u$BR]$BM@$BR[$BK${HOSTNAME%%.*}$BR]$B:\w\n$BR└──>$BR \\$ $NONE"
+else
+	PS1="$BR┌─[$BG\u$BR]$BY@$BR[$BC${HOSTNAME%%.*}$BR]$B:\w\n$BR└──>$BG \\$ $NONE"
+fi
+ 
+fi
+
