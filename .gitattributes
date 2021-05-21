@@ -1,0 +1,6 @@
+# Declare os arquivos que sempre terão delimitadores de linha CRLF.
+_bashrc text eol=lf
+_bashrc_mx_custom text eol=lf
+_bashrc_mxlinux text eol=lf
+trecho text eol=lf
+custom.sh eol=lf
