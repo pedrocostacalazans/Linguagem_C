@@ -1,5 +1,5 @@
 #!/bin/bash
-cp ~/.bashrc ~/.bashrc.old
+cp ~/.bashrc ~/.bashrc.bkp
 cat trecho >> ~/.bashrc
 clear
 echo 'Pode-se ainda descomentar ou acrescentar:'
