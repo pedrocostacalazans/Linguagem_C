@@ -3,7 +3,6 @@
 // Author      : Pedro Costa Calazans
 // Version     :
 // Copyright   : Your copyright notice
-// Description : Trabalho final semestre parte 3 in C++, Ansi-style
 //============================================================================
 
 #include <stdio.h>
