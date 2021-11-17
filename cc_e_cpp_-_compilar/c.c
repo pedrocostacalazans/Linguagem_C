@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+// const
 #define SIZE_CMD 300
 #define SIZE_AUX 200
 
