@@ -15,12 +15,6 @@ mv c cplus $HOME/.utils/
 chmod +x $HOME/.utils/c
 chmod +x $HOME/.utils/cplus
 
-echo '# Utils' >> $HOME/.bashrc
-echo 'UTILS="$HOME/.utils"' >> $HOME/.bashrc
-echo 'export PATH=$UTILS:$PATH' >> $HOME/.bashrc
-echo >> $HOME/.bashrc
-
-source $HOME/.bashrc
 echo
 echo "*****************************************"
 echo "*         Instalação concluída          *"
