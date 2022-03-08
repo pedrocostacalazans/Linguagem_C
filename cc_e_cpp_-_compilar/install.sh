@@ -3,7 +3,7 @@ clear
 echo "*****************************************"
 echo "*         Iniciando instalação          *"
 echo "*****************************************"
-echo "*****************************************"
+
 echo
 gcc -Wall -C -DNIX c.c -o c
 gcc -Wall -C -DNIX cplus.c -o cplus
